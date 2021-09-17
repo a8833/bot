@@ -63,9 +63,8 @@ if chname:
         chats=chat_id, pattern=mybot['命令别名']['bean']))
 
 
-
+font = ImageFont.truetype("arial", 40, encoding="unic")
 def creat_bean_count(date, beansin, beansout, beanstotal):
-    font = ImageFont.truetype("arial", 40, encoding="unic")
     tb = PrettyTable()
     tb.add_column('日期', date)
     tb.add_column('收入', beansin)
@@ -100,6 +99,6 @@ def creat_bean_counts(csv_file):
     length = 172 + 100 * num
     im = Image.new("RGB", (length, 400), (244, 244, 244))
     dr = ImageDraw.Draw(im)
-    font = ImageFont.truetype(_font, 18)
+    font = ImageFont.truetype("/usr/share/fonts/msyh.ttf", 18)
     dr.text((10, 5), str(tb), font=font, fill="#000000")
     im.save(_botimg)
