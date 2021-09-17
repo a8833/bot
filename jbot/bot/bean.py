@@ -63,7 +63,6 @@ if chname:
         chats=chat_id, pattern=mybot['命令别名']['bean']))
 
 
-font = ImageFont.truetype("arial", 40, encoding="unic")
 def creat_bean_count(date, beansin, beansout, beanstotal):
     tb = PrettyTable()
     tb.add_column('日期', date)
