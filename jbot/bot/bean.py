@@ -65,10 +65,10 @@ if chname:
 
 def creat_bean_count(date, beansin, beansout, beanstotal):
     tb = PrettyTable()
-    tb.add_column('日期', date)
-    tb.add_column('收入', beansin)
-    tb.add_column('支出', beansout)
-    tb.add_column('余额', beanstotal)
+    tb.add_column('%E6%97%A5%E6%9C%9F', date)
+    tb.add_column('%E6%94%B6%E5%85%A5', beansin)
+    tb.add_column('%E6%94%AF%E5%87%BA', beansout)
+    tb.add_column('%E4%BD%99%E9%A2%9D', beanstotal)
     font = ImageFont.truetype(_font, 18)
     im = Image.new("RGB", (500, 260), (244, 244, 244))
     dr = ImageDraw.Draw(im)
